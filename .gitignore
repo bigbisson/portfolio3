@@ -95,3 +95,4 @@ ENV/
 
 # collect static dir
 staticfiles/
+db.sqlite3
