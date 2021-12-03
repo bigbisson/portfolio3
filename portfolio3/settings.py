@@ -94,8 +94,6 @@ DATABASES = {
 
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -164,6 +162,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DROPBOX_OAUTH2_TOKEN = 'Yf20DucqDuoAAAAAAAAAAYHn4hAFNWZ-lNqmdCi0-NSp8J5e3QF1YH_tglsz7AyT'
+
+DROPBOX_ROOT_PATH = '/mediafiles/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
