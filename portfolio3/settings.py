@@ -161,7 +161,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DROPBOX_OAUTH2_TOKEN = 'Yf20DucqDuoAAAAAAAAAAYHn4hAFNWZ-lNqmdCi0-NSp8J5e3QF1YH_tglsz7AyT'
+DROPBOX_OAUTH2_TOKEN = 'Z5YizS2GUMAAAAAAAAAAAdimiKpGIPpPe0S-FW4Xl_6xiQtKx6GKVxr9HdRzmF7Y'
 
 DROPBOX_ROOT_PATH = '/mediafiles/'
 
