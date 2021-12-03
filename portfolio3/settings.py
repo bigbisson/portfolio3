@@ -155,12 +155,15 @@ STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DROPBOX_OAUTH2_TOKEN = 'Yf20DucqDuoAAAAAAAAAAYHn4hAFNWZ-lNqmdCi0-NSp8J5e3QF1YH_tglsz7AyT'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
