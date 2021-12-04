@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dk&!1f-imnvkl40kq3@%zaeqth!v#!chn5=6%gwe%nby2@q7^y'
+# SECRET_KEY = 
+
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -161,7 +166,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DROPBOX_OAUTH2_TOKEN = 'Z5YizS2GUMAAAAAAAAAAAdimiKpGIPpPe0S-FW4Xl_6xiQtKx6GKVxr9HdRzmF7Y'
+DROPBOX_OAUTH2_TOKEN = str(os.getenv('DROPBOX_OAUTH2_TOKEN'))
 
 DROPBOX_ROOT_PATH = '/mediafiles/'
 
